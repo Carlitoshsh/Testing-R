@@ -29,7 +29,7 @@ years <- 2002:2018
 months <- c('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')
 
 #Ruta donde se encuentra el archivo .shp que contiene los poligonos de los municipios
-munShapePath <- "D:/jd/clases/UDES/MAPAS PROYECTOS/mapa municipios/Municipios wgs84_Disolv.shp"
+munShapePath <- "D:/OneDrive - Olimpia Management/Escritorio/pruebas/pruebas/mapa municipios/Municipios wgs84_Disolv.shp"
 #Lectura del archivo .shp
 munShape <- readShapePoly(munShapePath)
 #Data frame donde se almacenan los atributos del archivo shape. En este caso usaremos el atributo Codigo_DAN para obtener el código Dane del municipio
@@ -44,7 +44,7 @@ data_table <- 0
 for (year in years) {
   for (month in months) {
     #Ruta donde se encuentran todos los archivos .nc4 correspondientes a los datos obtenidos por el sensor ya convertidos a las unidade deseadas
-    dir = "C:/Users/carlo/Desktop/pruebas/output/VI_16Days_005dg_v6/EVI/"
+    dir = "D:/OneDrive - Olimpia Management/Escritorio/pruebas/pruebas/output/VI_16Days_005dg_v6/EVI/"
     #Ruta donde se encuentran todos los archivos .nc4 que contienen el Indice Puntual calculado (Alteraciones) previamente en el anterior script
     # dirPI = "D:/jd/clases/UDES/articulo Daniel/datosNasa/DataIndPuntual/"
     full_path = paste0(dir, 'MOD13C1_EVI_', year, '_', month, ".tif")
