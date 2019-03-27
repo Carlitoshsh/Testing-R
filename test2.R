@@ -19,7 +19,7 @@ r <- raster(output2, varname="EVI")
 
 
 #Ruta donde se encuentra el archivo .shp que contiene los poligonos de los municipios
-munShapePath <- "C:/Users/carlo/Desktop/hi/MapaShape/Bogota.shp"
+munShapePath <-  "D:/OneDrive - Olimpia Management/Escritorio/pruebas/pruebas/mapa municipios/Municipios wgs84_Disolv.shp"
 #Lectura del archivo .shp
 munShape <- readShapePoly(munShapePath)
 #Data frame donde se almacenan los atributos del archivo shape. En este caso usaremos el atributo Codigo_DAN para obtener el código Dane del municipio
